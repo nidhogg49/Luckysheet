@@ -364,7 +364,8 @@ function getCellTextInfo(cell , ctx, option){
     }
 
     // let cell = Store.flowdata[r][c];
-    let space_width = option.space_width, space_height = option.space_height; //宽高方向 间隙
+    let space_width = Store.space_width ? Store.space_width : option.space_width,
+        space_height = Store.space_height ? Store.space_height : option.space_height; //宽高方向 间隙
 
     if(space_width==null){
         space_width = 2;

@@ -164,7 +164,9 @@ const Store = {
         vt: 1,
         m: '',
         v: ''
-    }
+    },
+    space_width: 8,
+    space_height: 8
 
 }
 
