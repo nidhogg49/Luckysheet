@@ -54,6 +54,28 @@ const dataVerificationCtrl = {
         'card': '身份证号码',
         'phone': '手机号'
     },
+    optionLabel_ru: {
+        'number': 'numeric',
+        'number_integer': 'integer',
+        'number_decimal': 'decimal',
+        'bw': 'between',
+        'nb': 'not between',
+        'eq': 'equal to',
+        'ne': 'not equal to',
+        'gt': 'greater',
+        'lt': 'less than',
+        'gte': 'greater or equal to',
+        'lte': 'less than or equal to',
+        'include': 'include',
+        'exclude': 'not include',
+        'equal': 'equal to',
+        'bf': 'earlier than',
+        'nbf': 'not earlier than',
+        'af': 'later than',
+        'naf': 'not later than',
+        'card': 'identification number',
+        'phone': 'phone number'
+    },
     optionLabel_en: {
         'number': 'numeric',
         'number_integer': 'integer',
@@ -1082,7 +1104,9 @@ const dataVerificationCtrl = {
         if(item.hintShow){
             let hintText;
 
-            if(Store.lang == 'en'){
+            if(Store.lang == 'ru'){
+                hintText = '<span style="color:#f5a623;">Hint: </span>';
+            } else if(Store.lang == 'en'){
                 hintText = '<span style="color:#f5a623;">Hint: </span>';
             }
             else{
@@ -1111,7 +1135,9 @@ const dataVerificationCtrl = {
         if(!validate){
             let failureText;
 
-            if(Store.lang == 'en'){
+            if(Store.lang == 'ru'){
+                failureText = '<span style="color:#f72626;">Failure: </span>';
+            } else if(Store.lang == 'en'){
                 failureText = '<span style="color:#f72626;">Failure: </span>';
             }
             else{
@@ -1132,7 +1158,41 @@ const dataVerificationCtrl = {
         let hintText = item.hintText || '';
 
         if(hintText.length == 0){
-            if(Store.lang == 'en'){
+            if(Store.lang == 'ru'){
+                if(item.type == 'dropdown'){
+                    hintText += 'please select an option in the drop-down list';
+                }
+                else if(item.type == 'checkbox'){
+
+                }
+                else if(item.type == 'number' || item.type == 'number_integer' || item.type == 'number_decimal'){
+                    hintText += 'please enter a ' + _this.optionLabel_ru[item.type] + ' ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+
+                    if(item.type2 == 'bw' || item.type2 == 'nb'){
+                        hintText += ' and ' + item.value2;
+                    }
+                }
+                else if(item.type == 'text_content'){
+                    hintText += 'please enter text ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+                }
+                else if(item.type == 'text_length'){
+                    hintText += 'please enter text with length ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+                    
+                    if(item.type2 == 'bw' || item.type2 == 'nb'){
+                        hintText += ' and ' + item.value2;
+                    }
+                }
+                else if(item.type == 'date'){
+                    hintText += 'please enter a date ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+
+                    if(item.type2 == 'bw' || item.type2 == 'nb'){
+                        hintText += ' and ' + item.value2;
+                    }
+                }
+                else if(item.type == 'validity'){
+                    hintText += 'please enter the correct ' + _this.optionLabel_ru[item.type2];
+                }
+            } else if(Store.lang == 'en'){
                 if(item.type == 'dropdown'){
                     hintText += 'please select an option in the drop-down list';
                 }
@@ -1217,7 +1277,41 @@ const dataVerificationCtrl = {
 
         let failureText = '';
 
-        if(Store.lang == 'en'){
+        if(Store.lang == 'ru'){
+            if(item.type == 'dropdown'){
+                failureText += 'what you selected is not an option in the drop-down list';
+            }
+            else if(item.type == 'checkbox'){
+
+            }
+            else if(item.type == 'number' || item.type == 'number_integer' || item.type == 'number_decimal'){
+                failureText += 'what you entered is not a ' + _this.optionLabel_ru[item.type] + ' ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+
+                if(item.type2 == 'bw' || item.type2 == 'nb'){
+                    failureText += ' and ' + item.value2;
+                }
+            }
+            else if(item.type == 'text_content'){
+                failureText += 'what you entered is not text that ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+            }
+            else if(item.type == 'text_length'){
+                failureText += 'the text you entered is not length ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+                
+                if(item.type2 == 'bw' || item.type2 == 'nb'){
+                    failureText += ' and ' + item.value2;
+                }
+            }
+            else if(item.type == 'date'){
+                failureText += 'the date you entered is not ' + _this.optionLabel_ru[item.type2] + ' ' + item.value1;
+
+                if(item.type2 == 'bw' || item.type2 == 'nb'){
+                    failureText += ' and ' + item.value2;
+                }
+            }
+            else if(item.type == 'validity'){
+                failureText += 'what you entered is not a correct ' + _this.optionLabel_ru[item.type2];
+            }
+        } else if(Store.lang == 'en'){
             if(item.type == 'dropdown'){
                 failureText += 'what you selected is not an option in the drop-down list';
             }
