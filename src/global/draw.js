@@ -1283,7 +1283,6 @@ let cellRender = function(r, c, start_r, start_c, end_r, end_c, value, luckyshee
     let cell = Store.flowdata[r][c];
     let cellWidth = end_c - start_c - 2;
     let cellHeight = end_r - start_r - 2;
-    console.log('Store.space_width', Store.space_width);
     let space_width = Store.space_width || 2, space_height = Store.space_height || 2; //宽高方向 间隙
 
     //水平对齐
