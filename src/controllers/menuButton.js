@@ -1082,7 +1082,9 @@ const menuButton = {
                     {"text": "<canvas type='MediumDashDot' class='border-MediumDashDot' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "10", "example": ""},
                     {"text": "<canvas type='MediumDashDotDot' class='border-MediumDashDotDot' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "11", "example": ""},
                     // {"text":"<canvas type='SlantedDashDot' class='border-SlantedDashDot' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value":"12", "example":""},
-                    {"text": "<canvas type='Thick' class='border-Thick' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "13", "example": ""}
+                    {"text": "<canvas type='Thick' class='border-Thick' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "13", "example": ""},
+                    {"text": "<canvas type='Divider' class='border-Thick' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "14", "example": ""},
+                    {"text": "<canvas type='DividerBig' class='border-Thick' width="+ canvasW +" height="+ canvasH +" style='width:"+ canvasW +"px;height:"+ canvasH +"px;position:static;'></canvas>", "value": "15", "example": ""},
                 ];
 
                 let subitemset = _this.createButtonMenu(subitemdata);
@@ -3705,7 +3707,9 @@ const menuButton = {
             "10": "MediumDashDot", 
             "11": "MediumDashDotDot", 
             "12": "SlantedDashDot", 
-            "13": "Thick"
+            "13": "Thick",
+            "14": "Divider",
+            "15": "DividerBig"
         };
 
         type = borderType[type.toString()];
@@ -3752,6 +3756,16 @@ const menuButton = {
             canvasborder.moveTo(m_st, m_ed);
             canvasborder.lineTo(line_st, line_ed);
             canvasborder.lineWidth = 3;
+        } 
+        else if(type == "Divider"){
+            canvasborder.moveTo(m_st, m_ed);
+            canvasborder.lineTo(line_st, line_ed);
+            canvasborder.lineWidth = 4;
+        }
+        else if(type == "DividerBig"){
+            canvasborder.moveTo(m_st, m_ed);
+            canvasborder.lineTo(line_st, line_ed);
+            canvasborder.lineWidth = 8;
         }
         else {
             canvasborder.moveTo(m_st, m_ed);

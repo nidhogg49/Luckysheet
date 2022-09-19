@@ -60,9 +60,19 @@ const selection = {
             "10": "MediumDashDot",
             "11": "MediumDashDotDot",
             "12": "SlantedDashDot",
-            "13": "Thick"
+            "13": "Thick",
+            "14": "Divider",
+            "15": "DividerBig"
         };
         type = borderType[type.toString()];
+
+        if(type == "Divider"){
+            style += "4px ";
+        }
+        
+        if(type == "DividerBig"){
+            style += "8px ";
+        }
 
         if(type.indexOf("Medium") > -1){
             style += "1pt ";
