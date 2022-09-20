@@ -1,0 +1,30 @@
+.luckysheet .luckysheet-wa-editor {
+  padding-top: 0;
+  padding-left: 0;
+  background: transparent;
+}
+
+.luckysheet-wa-editor .luckysheet-toolbar-button {
+  border-right: 1px solid #CED5D8;
+}
+
+.luckysheet .luckysheet-left-top {
+  height: 42.5px;
+  margin: 0;
+}
+
+.luckysheet .luckysheet-wa-calculate {
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.luckysheet #luckysheet-functionbox {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.luckysheet #luckysheet-functionbox .luckysheet-functionbox-cell-input {
+  line-height: 32px;
+}

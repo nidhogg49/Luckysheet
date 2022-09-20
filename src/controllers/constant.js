@@ -1033,7 +1033,7 @@ const keycode = {
 const luckysheetdefaultstyle = {
     fillStyle: "#000000",
     textBaseline: "middle",
-    strokeStyle: "#dfdfdf",
+    strokeStyle: "#b0b7bd",
     rowFillStyle: "#5e5e5e",
     textAlign: 'center'
 }
