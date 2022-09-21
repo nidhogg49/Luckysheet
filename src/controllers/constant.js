@@ -1039,7 +1039,7 @@ const luckysheetdefaultstyle = {
 }
 
 const luckysheetdefaultFont = function(){
-    return  'normal normal normal '+ Store.defaultFontSize +'pt '+ locale().fontarray[0] +', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei", sans-serif';
+    return  'normal normal normal '+ Store.defaultFontSize +'pt '+ locale().fontarray[0] +', "SBSans, Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei", sans-serif';
 } 
 
 const luckysheet_CFiconsImg = new Image();
