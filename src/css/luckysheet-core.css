@@ -79,8 +79,8 @@
 }
 
 .luckysheet-loading-image{
-    width: 8em;
-    height: 8em;
+    width: 4em;
+    height: 4em;
     margin: 0 auto;
 }
 
@@ -100,6 +100,7 @@
     width:100%;
     height:100%;
 }
+
 
 .luckysheet-work-area {
     height: 90px;
@@ -7356,28 +7357,4 @@ fieldset[disabled] .btn-danger.focus {
 #luckysheet-icon-redo.disabled {
     cursor: default;
     opacity: .4;
-}
-
-
-
-.loadingAnimation {
-    width: 3em;
-    height: 3em;
-    animation: loading-rotate 2s linear infinite;
-}
-
-.loadingAnimation circle:first-of-type {
-    stroke-dasharray: 150;
-    stroke-dashoffset: 0;
-    stroke-width: 4;
-    stroke: #eaecee;
-    stroke-linecap: round;
-}
-.loadingAnimation circle:last-of-type {
-    animation: loading-dash 1.5s ease-in-out infinite;
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: 0;
-    stroke-width: 4;
-    stroke: currentColor;
-    stroke-linecap: round;
 }
