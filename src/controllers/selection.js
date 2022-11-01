@@ -66,19 +66,15 @@ const selection = {
         };
         type = borderType[type.toString()];
 
-        if(type == "Divider"){
-            style += "4px ";
-        }
-        
-        if(type == "DividerBig"){
-            style += "8px ";
-        }
-
         if(type.indexOf("Medium") > -1){
             style += "1pt ";
         }
-        else if(type == "Thick"){
+        else if(type == "Thick") {
             style += "1.5pt ";
+        } else if(type == "Divider") {
+            style += "4px ";
+        } else if(type == "DividerBig") {
+            style += "8px ";
         }
         else {
             style += "0.5pt ";
