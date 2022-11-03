@@ -28,7 +28,7 @@ const insertFormula = {
             }
             else{
                 for(let i = 0; i < functionlist.length; i++){
-                    if(/^[a-zA-Z]+$/.test(txt)){
+                    if(/^[a-zA-Zа-яА-Я]+$/.test(txt)){
                         if(functionlist[i].n.indexOf(txt) != "-1"){
                             $('<div class="listBox" name="'+ functionlist[i].n +'"><span>'+ functionlist[i].n +'</span><span>'+ functionlist[i].a +'</span></div>').appendTo($("#formulaTypeList"));
                         }
