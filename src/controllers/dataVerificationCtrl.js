@@ -1106,7 +1106,7 @@ const dataVerificationCtrl = {
 
             if(Store.lang == 'ru'){
                 hintText = '<span style="color:#f5a623;">Hint: </span>';
-            } else if(Store.lang == 'en'){
+            } else if(Store.lang == 'ru'){
                 hintText = '<span style="color:#f5a623;">Hint: </span>';
             }
             else{
@@ -1137,7 +1137,7 @@ const dataVerificationCtrl = {
 
             if(Store.lang == 'ru'){
                 failureText = '<span style="color:#f72626;">Failure: </span>';
-            } else if(Store.lang == 'en'){
+            } else if(Store.lang == 'ru'){
                 failureText = '<span style="color:#f72626;">Failure: </span>';
             }
             else{
@@ -1192,7 +1192,7 @@ const dataVerificationCtrl = {
                 else if(item.type == 'validity'){
                     hintText += 'please enter the correct ' + _this.optionLabel_ru[item.type2];
                 }
-            } else if(Store.lang == 'en'){
+            } else if(Store.lang == 'ru'){
                 if(item.type == 'dropdown'){
                     hintText += 'please select an option in the drop-down list';
                 }
@@ -1311,7 +1311,7 @@ const dataVerificationCtrl = {
             else if(item.type == 'validity'){
                 failureText += 'what you entered is not a correct ' + _this.optionLabel_ru[item.type2];
             }
-        } else if(Store.lang == 'en'){
+        } else if(Store.lang == 'ru'){
             if(item.type == 'dropdown'){
                 failureText += 'what you selected is not an option in the drop-down list';
             }

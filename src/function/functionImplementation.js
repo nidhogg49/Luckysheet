@@ -20,7 +20,7 @@ import numeral from 'numeral';
 
 //公式函数计算
 const functionImplementation = {
-    "SUM": function() {
+    "СУММ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;
@@ -95,7 +95,7 @@ const functionImplementation = {
             return [formula.error.v, err];
         }
     },
-    "AVERAGE": function() {
+    "СРЗНАЧ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;
@@ -16304,7 +16304,7 @@ const functionImplementation = {
             return [formula.error.v, err];
         }
     },
-    "PMT": function() {
+    "ПЛТ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;
@@ -19976,7 +19976,7 @@ const functionImplementation = {
             return [formula.error.v, err];
         }
     },
-    "MINUS": function() {
+    "ВЫЧЕСТЬ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;
@@ -20024,7 +20024,7 @@ const functionImplementation = {
             return [formula.error.v, err];
         }
     },
-    "MULTIPLY": function() {
+    "УМНОЖИТЬ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;
@@ -20072,7 +20072,7 @@ const functionImplementation = {
             return [formula.error.v, err];
         }
     },
-    "DIVIDE": function() {
+    "РАЗДЕЛИТЬ": function() {
         //必要参数个数错误检测
         if (arguments.length < this.m[0] || arguments.length > this.m[1]) {
             return formula.error.na;

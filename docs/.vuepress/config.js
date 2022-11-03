@@ -13,7 +13,6 @@ module.exports = {
 			title: 'Luckysheet文档',
 			description: 'Luckysheet ，一款纯前端类似excel的在线表格，功能强大、配置简单、完全开源。本站包含官方配置文档,API,教程。'
 		},
-		
 	},
 	themeConfig: {
 		domain: 'https://mengshukeji.github.io/LuckysheetDemo',

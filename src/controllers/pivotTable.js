@@ -2001,7 +2001,7 @@ const pivotTable = {
                             
                             if (type == "num") {
                                 name = locale_pivotTable.valueStatisticsSUM+":" + name;
-                                sumtype = "data-sumtype='SUM'";
+                                sumtype = "data-sumtype='СУММ'";
                                 nameindex = "data-nameindex='0'";
                             }
                             else {
