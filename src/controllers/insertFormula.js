@@ -90,7 +90,7 @@ const insertFormula = {
             $("#luckysheet-search-formula-parm .parmDetailsBox").empty();
 
             let parmName = $(this).parents(".parmBox").find(".name").text();
-            $('<span>'+ parmName +':</span><span>'+ parmDetail +'</span>').appendTo($("#luckysheet-search-formula-parm .parmDetailsBox"));
+            $('<span>'+ parmName +':</span><span>&nbsp;'+ parmDetail +'</span>').appendTo($("#luckysheet-search-formula-parm .parmDetailsBox"));
             
             //公式参数可自增（参数自增最多5个）
             if(parmRepeat == "y"){
@@ -267,7 +267,7 @@ const insertFormula = {
                                     '<div class="parmListBox">'+ parm_list_content +'</div>'+
                                     '<div class="formulaDetails">'+ functionlist[i].d +'</div>'+
                                     '<div class="parmDetailsBox"></div>'+
-                                    '<div class="result">'+locale_formulaMore.calculationResult+' = <span></span></div>'+
+                                    // '<div class="result">'+locale_formulaMore.calculationResult+' = <span></span></div>'+
                                 '</div>';
             }
         }
