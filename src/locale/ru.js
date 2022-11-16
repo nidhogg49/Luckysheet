@@ -8892,7 +8892,7 @@ export default {
         splitColumn: 'Split text',
         insertImage: 'Insert image',
         insertLink: 'Insert link',
-        dataVerification: 'Data verification',
+        dataVerification: 'Проверить данные',
         protection:"Protect the sheet",
 
         clearText:"Clear color",
@@ -9349,9 +9349,9 @@ export default {
         mergeError:"There are merged cells in the filter selection, this operation cannot be performed!",
     },
     rightclick: {
-        copy: 'Copy',
-        copyAs: 'Copy as',
-        paste: 'Paste',
+        copy: 'Копировать',
+        copyAs: 'Копировать как',
+        paste: 'Вставить',
         insert: 'Insert',
         delete: 'Delete',
         deleteCell: 'Delete cell',
