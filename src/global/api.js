@@ -51,6 +51,7 @@ const IDCardReg = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[12])(0[1-9]|[12]\d|3[01])\d{3
  * @param {String} options.type 单元格的值类型，可以设置为原始值"v"或者显示值"m"；默认值为'v',表示获取单元格的实际值
  * @param {Number} options.order 工作表索引；默认值为当前工作表索引
  */
+
 export function getCellValue(row, column, options = {}) {
     if (!isRealNum(row) || !isRealNum(column)) {
         return tooltip.info('Arguments row or column cannot be null or undefined.', '')
@@ -6678,7 +6679,7 @@ export function toJson(){
  * @param {String} lang 可选参数；暂支持`"zh"`、`"en"`、`"es"`；默认为`"zh"`；
  */
 export function changLang(lang = 'zh'){
-    if(!['zh', 'en', 'es'].includes(lang)){
+    if(!['zh', 'en', 'es', 'ru'].includes(lang)){
         return tooltip.info("The lang parameter is invalid.", "");
     }
 

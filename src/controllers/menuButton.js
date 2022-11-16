@@ -2152,7 +2152,7 @@ const menuButton = {
 
         //公式
         $("#luckysheet-icon-function").click(function(){
-            _this.autoSelectionFormula("SUM");
+            _this.autoSelectionFormula("СУММ");
         });
 
         //公式菜单
@@ -2165,7 +2165,7 @@ const menuButton = {
             
             if($menuButton.length == 0){
                 let itemdata = [
-                    {"text": locale_formula.sum, "value": "SUM", "example": 'SUM'},
+                    {"text": locale_formula.sum, "value": "СУММ", "example": 'СУММ'},
                     {"text": locale_formula.average, "value": "AVERAGE", "example": 'AVERAGE'},
                     {"text": locale_formula.count, "value": "COUNT", "example": 'COUNT'},
                     {"text": locale_formula.max, "value": "MAX", "example": 'MAX'},

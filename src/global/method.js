@@ -99,7 +99,7 @@ const defaultConfig = {
         clearjfundo: true,
         jfredo: [],
         jfundo: [],
-        lang: 'en', //language
+        lang: 'ru', //language
         createChart: '',
         highlightChart: '',
         zIndex: 15,
