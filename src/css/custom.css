@@ -1,0 +1,53 @@
+.luckysheet .luckysheet-wa-editor {
+  padding-top: 0;
+  padding-left: 0;
+  background: transparent;
+}
+
+.luckysheet-wa-editor .luckysheet-toolbar-button {
+  border-right: 1px solid #CED5D8;
+}
+
+.luckysheet .luckysheet-left-top {
+  height: 42.5px;
+  margin: 0;
+}
+
+.luckysheet .luckysheet-wa-calculate {
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.luckysheet #luckysheet-functionbox {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.luckysheet #luckysheet-functionbox .luckysheet-functionbox-cell-input {
+  line-height: 32px;
+  font-family: 'SBSans' sans-serif;
+}
+
+.loadingAnimation {
+  width: 2em;
+  height: 2em;
+  animation: loading-rotate 2s linear infinite;
+}
+
+.loadingAnimation circle:first-of-type {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: #eaecee;
+  stroke-linecap: round;
+}
+.loadingAnimation circle:last-of-type {
+  animation: loading-dash 1.5s ease-in-out infinite;
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: currentColor;
+  stroke-linecap: round;
+}

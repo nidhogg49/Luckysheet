@@ -27,7 +27,7 @@
     /*width: 100%;
     height: 100%;*/
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-family: "SBSans", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     border: 1px solid #e5e5e5;
     background: #fff;
 }
@@ -49,7 +49,7 @@
     -o-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
 
-    background-image: url(loading.gif);
+    /* background-image: url(loading.gif); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -73,19 +73,19 @@
     top: 50%;
     transform: translateY(-50%);
     width:100%;
-    font-size: 14px;
-    color: #409eff;
+    font-size: 16px;
+    color: #107f8c;
     text-align:center;
 }
 
 .luckysheet-loading-image{
-    width: 8em;
-    height: 8em;
+    width: 4em;
+    height: 4em;
     margin: 0 auto;
 }
 
 .luckysheet-loading-text{
-    margin-top: 1em;
+    display: none;
 }
 
 .luckysheet-loading-image .image-type{
@@ -100,6 +100,7 @@
     width:100%;
     height:100%;
 }
+
 
 .luckysheet-work-area {
     height: 90px;

@@ -845,6 +845,7 @@ function customLoadingConfig() {
         image: ()=>{
             return `<svg viewBox="25 25 50 50" class="circular">
             <circle cx="50" cy="50" r="20" fill="none"></circle>
+            <circle cx="50" cy="50" r="20" fill="none"></circle>
             </svg>`
         },
         text: info.loading,
@@ -1033,13 +1034,13 @@ const keycode = {
 const luckysheetdefaultstyle = {
     fillStyle: "#000000",
     textBaseline: "middle",
-    strokeStyle: "#dfdfdf",
+    strokeStyle: "#b0b7bd",
     rowFillStyle: "#5e5e5e",
     textAlign: 'center'
 }
 
 const luckysheetdefaultFont = function(){
-    return  'normal normal normal '+ Store.defaultFontSize +'pt '+ locale().fontarray[0] +', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei", sans-serif';
+    return  'normal normal normal '+ Store.defaultFontSize +'pt '+ locale().fontarray[0] +', "SBSans, Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei", sans-serif';
 } 
 
 const luckysheet_CFiconsImg = new Image();

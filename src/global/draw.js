@@ -102,7 +102,7 @@ function luckysheetDrawgridRowTitle(scrollHeight, drawHeight, offsetTop) {
                 Store.rowHeaderWidth -1,
                 (end_r - start_r + 1+lastOffset-firstOffset) 
             )
-            luckysheetTableContent.fillStyle = "#000000";
+            luckysheetTableContent.fillStyle = "#b0b7bd";
 
             //行标题栏序列号
             luckysheetTableContent.save();//save scale before draw text
@@ -300,7 +300,7 @@ function luckysheetDrawgridColumnTitle(scrollWidth, drawWidth, offsetLeft) {
                 (end_c - start_c) ,
                 Store.columnHeaderHeight -1
             )
-            luckysheetTableContent.fillStyle = "#000000";
+            luckysheetTableContent.fillStyle = "#b0b7bd";
 
             //列标题栏序列号
             luckysheetTableContent.save();//save scale before draw text
